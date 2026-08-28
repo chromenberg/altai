@@ -1,0 +1,16 @@
+[package]
+name = "altai"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+glfw = "0.62.0"
+altai_render = { path = "crates/altai_render" }
+
+[workspace]
+members = [
+  "crates/*"
+]
+
+[features]
+# altai_render = ["altai_render/render"]
