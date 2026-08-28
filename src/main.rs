@@ -1,5 +1,5 @@
 use altai;
 
 fn main() {
-  altai::render::teslt();
+  altai::render::renderer::teslt();
 }

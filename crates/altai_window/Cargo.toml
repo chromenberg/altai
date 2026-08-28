@@ -1,7 +1,7 @@
 [package]
-name = "altai_render"
+name = "altai_window"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-vulkano = "0.35.2"
+glfw = "0.62.0"
