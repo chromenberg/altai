@@ -7,7 +7,7 @@ edition = "2024"
 # altai crates
 altai_render = { path = "crates/altai_render" }
 altai_window = { path = "crates/altai_window" }
-altai_2d = { path = "crates/altai_2d" }
+altai_app = { path = "crates/altai_app" }
 
 # external crates
 glfw = "0.62.0"
