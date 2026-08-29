@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 glfw = "0.62.0"
+altai_window = { path = "../altai_window" }

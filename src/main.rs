@@ -1,5 +1,5 @@
-use altai;
+use altai::app::*;
 
 fn main() {
-  altai::render::renderer::teslt();
+  app::App::new();
 }

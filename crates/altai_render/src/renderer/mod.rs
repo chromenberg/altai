@@ -2,7 +2,6 @@ use vulkano::{
   library::VulkanLibrary
 };
 
-use glfw;
 
 // struct Renderer {
   
@@ -10,5 +9,5 @@ use glfw;
 
 pub fn init_vulkan() {
    let library = VulkanLibrary::new().unwrap();
-   glfw
+
 }

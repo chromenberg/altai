@@ -1,6 +1,6 @@
-use std::collections::HashMap;
-
-use glfw;
+use std::{collections::HashMap, mem};
+use glfw::{Context, Glfw, InitError};
+use altai_window::window::Window;
 
 #[derive(Default)]
 struct AppModule {
@@ -23,15 +23,19 @@ struct AppModules {
   sub_modules: HashMap<String, AppModule>
 }
 
-struct App {
+pub struct App {
   modules: AppModules,
+  temp_window: Window
 }
 
 impl Default for App {
   fn default() -> Self {
-    let app = App::empty();
+    let mut app = App::empty();
     // put the needed app data in here
-
+    let mut glfw_object = glfw::init_no_callbacks().unwrap();
+    
+    app.temp_window = Window::create(&mut glfw_object, 640, 480);
+    
     // return the app
     app
   }
@@ -39,6 +43,8 @@ impl Default for App {
 
 impl App {
   pub fn new() -> App {
+    
+    
     App::default()
   }
 
@@ -47,7 +53,18 @@ impl App {
       modules: AppModules {
         main: AppModule::new(),
         sub_modules: HashMap::default()
-      }
+      },
+      temp_window: Window::empty()
     }
+  }
+
+  // Adds a module
+  pub fn add_module() {}
+  
+  // Adds a window to the main module
+  pub fn add_window() {}
+
+  pub fn start(&self) {
+   
   }
 }
