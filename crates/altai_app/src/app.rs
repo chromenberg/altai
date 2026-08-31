@@ -43,8 +43,6 @@ impl Default for App {
 
 impl App {
   pub fn new() -> App {
-    
-    
     App::default()
   }
 
@@ -64,7 +62,10 @@ impl App {
   // Adds a window to the main module
   pub fn add_window() {}
 
-  pub fn start(&self) {
-   
+  pub fn start(&mut self) {
+    self.temp_window.glfw_window_mut().make_current();
+    while !self.temp_window.glfw_window().should_close() {
+      
+    }
   }
 }

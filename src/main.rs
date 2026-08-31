@@ -1,5 +1,6 @@
-use altai::app::*;
+use altai::app::app::*;
 
 fn main() {
-  app::App::new();
+  App::new()
+      .start();
 }
