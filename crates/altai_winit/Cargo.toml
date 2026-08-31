@@ -1,9 +1,9 @@
 [package]
-name = "altai_app"
+name = "altai_winit"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 winit = "0.30.13"
 altai_window = { path = "../altai_window" }
-altai_render = { path = "../altai_render" }
+altai_app = { path = "../altai_app" }

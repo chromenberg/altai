@@ -1,13 +1,2 @@
-use vulkano::{
-  library::VulkanLibrary
-};
+pub mod vulkan;
 
-
-// struct Renderer {
-  
-// }
-
-pub fn init_vulkan() {
-   let library = VulkanLibrary::new().unwrap();
-
-}
